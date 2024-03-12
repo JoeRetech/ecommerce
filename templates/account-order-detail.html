@@ -88,14 +88,14 @@
               </a>
                 <div class="ps-sm-4 pt-2">
                   <h3 class="product-title fs-base mb-2"><a href="{% url 'apps.main:single_product' cp.product.id %}">{{cp.product.title}}</a></h3>
-                  <div class="fs-lg text-accent pt-2">${{cp.rate}}</div>
+                  <div class="fs-lg text-accent pt-2">₹{{cp.rate}}</div>
                 </div>
               </div>
               <div class="pt-2 ps-sm-3 mx-auto mx-sm-0 text-center">
                 <div class="text-muted mb-2">Quantity:</div>{{cp.quantity}}
               </div>
               <div class="pt-2 ps-sm-3 mx-auto mx-sm-0 text-center">
-                <div class="text-muted mb-2">Subtotal</div>${{cp.subtotal}}
+                <div class="text-muted mb-2">Subtotal</div>₹{{cp.subtotal}}
               </div>
             </div>
             {% endfor %}
@@ -104,10 +104,10 @@
           </div>
           <!-- Footer-->
           <div class="modal-footer flex-wrap justify-content-between bg-secondary fs-md">
-            <div class="px-2 py-1 fade"><span class="text-muted">Subtotal:&nbsp;</span><span>${{order.subtotal}}</span></div>
-            <div class="px-2 py-1 fade "><span class="text-muted">Shipping:&nbsp;</span><span>$0</span></div>
-            <div class="px-2 py-1 fade"><span class="text-muted">Tax:&nbsp;</span><span>$0</span></div>
-            <div class="px-2 py-1"><span class="text-muted">Total:&nbsp;</span><span class="fs-lg">${{order.total}}</span></div>
+            <div class="px-2 py-1 fade"><span class="text-muted">Subtotal:&nbsp;</span><span>₹{{order.subtotal}}</span></div>
+            <div class="px-2 py-1 fade "><span class="text-muted">Shipping:&nbsp;</span><span>₹0</span></div>
+            <div class="px-2 py-1 fade"><span class="text-muted">Tax:&nbsp;</span><span>₹0</span></div>
+            <div class="px-2 py-1"><span class="text-muted">Total:&nbsp;</span><span class="fs-lg">₹{{order.total}}</span></div>
           </div>
         </div>
       </div>

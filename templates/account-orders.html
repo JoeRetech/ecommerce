@@ -74,7 +74,7 @@
                   <td class="py-3"><a class="nav-link-style fw-medium fs-sm" href="{% url 'apps.accounts:orderdetail' ord.pk %}" data-bs-toggle="modal">#ORDER_{{ord.id}}</a></td>
                   <td class="py-3">{{ord.created_at}}</td>
                   <td class="py-3"><span class="badge bg-info m-0">{{ord.order_status}}</span></td>
-                  <td class="py-3">${{ord.total}}</td>
+                  <td class="py-3">₹{{ord.total}}</td>
                 </tr>
                 {% endfor %}
                 

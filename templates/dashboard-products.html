@@ -94,9 +94,9 @@
                     </ol>
                   </nav>
                   <h3 class="h6 product-title mb-2"><a href="{% url 'apps.main:single_product' sale.product.id %}">{{sale.product.title}}</a></h3>
-                  <div class="d-inline-block text-accent">${{sale.product.market_price}}</div>
+                  <div class="d-inline-block text-accent">₹{{sale.product.market_price}}</div>
                   <div class="d-inline-block text-muted fs-ms border-start ms-2 ps-2">Sales: <span class="fw-medium">{{sale.quantity}}</span></div>
-                  <div class="d-inline-block text-muted fs-ms border-start ms-2 ps-2">Earnings: <span class="fw-medium">${{sale.subtotal}}</span></div>
+                  <div class="d-inline-block text-muted fs-ms border-start ms-2 ps-2">Earnings: <span class="fw-medium">₹{{sale.subtotal}}</span></div>
                   <div class="d-flex justify-content-center justify-content-sm-start pt-3">
                     <a class="nav-link-style me-2" href="{% url 'apps.seller_accounts:edit_product' sale.product.id %}" >
                     <button class="btn bg-faded-info btn-icon me-2" type="button"><i class="ci-edit text-info"></i></button></a>

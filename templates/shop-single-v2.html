@@ -90,7 +90,7 @@
                 <div class="col-lg-5 pt-4 pt-lg-0">
                   <div class="product-details ms-auto pb-3">
                     <h1 class="h3 text-dark mb-2">{{single_product.title}}</h1>
-                    <div class="h3 fw-normal text-accent mb-3 me-1">${{single_product.market_price}}</div>
+                    <div class="h3 fw-normal text-accent mb-3 me-1">₹{{single_product.market_price}}</div>
                     <div class="fs-sm mb-4"><span class="text-heading fw-medium me-1">Color:</span><span class="text-muted" id="colorOption">{{single_product.color}}</span></div>
                     {% comment %} <div class="position-relative me-n4 mb-3">
                       <div class="form-check form-option form-check-inline mb-2">
@@ -139,21 +139,21 @@
                                 <div class="fw-semibold text-dark">Local courier shipping</div>
                                 <div class="fs-sm text-muted">2 - 4 days</div>
                               </div>
-                              <div>$16.50</div>
+                              <div>₹16.50</div>
                             </div>
                             <div class="d-flex justify-content-between border-bottom py-2">
                               <div>
                                 <div class="fw-semibold text-dark">UPS ground shipping</div>
                                 <div class="fs-sm text-muted">4 - 6 days</div>
                               </div>
-                              <div>$19.00</div>
+                              <div>₹19.00</div>
                             </div>
                             <div class="d-flex justify-content-between pt-2">
                               <div>
                                 <div class="fw-semibold text-dark">Local pickup from store</div>
                                 <div class="fs-sm text-muted">&mdash;</div>
                               </div>
-                              <div>$0.00</div>
+                              <div>₹0.00</div>
                             </div>
                           </div>
                         </div>
@@ -198,7 +198,7 @@
                   
                   <div class="ps-3">
                     <h6 class="fs-base mb-2">{{single_product.title}}</h6>
-                    <div class="h4 fw-normal text-accent">${{single_product.market_price}}.<small>00</small></div>
+                    <div class="h4 fw-normal text-accent">₹{{single_product.market_price}}.<small>00</small></div>
                   </div>
                 </div>
                 <div class="d-flex align-items-center pt-3">
@@ -278,7 +278,7 @@
                   {% endif %}
                   <div class="ps-3">
                     <h6 class="fs-base mb-2">{{single_product.title}}</h6>
-                    <div class="h4 fw-normal text-accent">${{single_product.market_price}}</div>
+                    <div class="h4 fw-normal text-accent">₹{{single_product.market_price}}</div>
                   </div>
                 </div>
                 <div class="d-flex align-items-center pt-3">
@@ -436,7 +436,7 @@
                 <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="{% url 'apps.main:single_product' product.id%}">{{product.articel_type}}</a>
                   <h3 class="product-title fs-sm"><a href="#">{{product.title}}</a></h3>
                   <div class="d-flex justify-content-between">
-                    <div class="product-price"><span class="text-accent">${{product.market_price}}.<small>00</small></span></div>
+                    <div class="product-price"><span class="text-accent">₹{{product.market_price}}.<small>00</small></span></div>
                     <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
                     </div>
                   </div>
