@@ -5,13 +5,6 @@ This is an E-Commerce web application based on django framework.
 It provides basic e-commerce functionalities to users and also includes techniques of product categorization using Naive base classification and product recommendation using Co-sine similarity algorithm.
 
 
-## Authors
-
-- [Harshad Rane](https://github.com/harshadrane67)
-- [Prem Mevada](https://github.com/PremMevada)
-- [Tejas Mandhare](https://github.com/mandharet)
-- [Omkar Suryawanshi](#)
-
   
 ## Report
 
